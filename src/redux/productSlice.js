@@ -44,6 +44,7 @@ const productSlice = createSlice({
       .addCase(deleteProduct.fulfilled, (state, action) => {
         state.products = state.products.filter(
           (product) => product.id !== action.payload
+
         );
       });
   },
